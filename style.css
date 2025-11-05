@@ -1,0 +1,87 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BODY BACKGROUND === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === CONTAINER CARD === */
+.container {
+  background-color: #fff;
+  width: 320px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* === HEADING === */
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* === BOARD GRID === */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* === CELLS === */
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #f8f8f8;
+  border: 2px solid #e2e2e2;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* === BUTTON === */
+#restartButton {
+  background-color: #22c55e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#restartButton:hover {
+  background-color: #16a34a;
+}
+
+/* === WINNING MESSAGE (optional) === */
+.winning-message {
+  font-weight: 500;
+  color: #1f1e1e;
+  margin-top: 10px;
+}
